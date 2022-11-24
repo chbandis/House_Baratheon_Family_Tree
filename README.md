@@ -1,4 +1,4 @@
-# House_Baratheon_Family_Tree
+# House Baratheon Family Tree
 Development of a JAVA application that reads, edits, searches and visualizes genealogical trees.
 Requirements covered by the application:
 1. Read a csv file and load the data into an appropriate data structure into the computer's main memory.
