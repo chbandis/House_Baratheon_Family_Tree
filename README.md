@@ -13,4 +13,4 @@ Requirements covered by the application:
 
 **Known Issues**
 
-In the code of the Graph file.java a graph was created that shows that there is a relationship between the two nodes but it was not possible to show the kind of relationship they have, so the FindRelation.java class was created and used.
+In the code of the Graph.java class a graph was created that shows that there is a relationship between the two nodes but it was not possible to show the kind of relationship they have, so the FindRelation.java class was created and used.
