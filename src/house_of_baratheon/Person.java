@@ -1,4 +1,3 @@
-
 package house_of_baratheon;
 
 public class Person {                       //Create a Person class
