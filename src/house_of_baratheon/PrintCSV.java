@@ -9,12 +9,12 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class PrintCSV {
-    static List<Person> people = new LinkedList<Person>();     //Δημιουργία λίστας τύπου object
-    static List<Relation> relation = new ArrayList<Relation>();   //Δημιουργία λίστας τύπου object
+    static List<Person> people = new LinkedList<Person>();     //Create object lists
+    static List<Relation> relation = new ArrayList<Relation>();   
 
     public static void printCSV()
     {
-        String csvFile = "./house_baratheon.csv";       //Καταχώρηση του path του csv αρχείο σε  μεταβλητή τύπου String
+        String csvFile = "./house_baratheon.csv";       //Store the path of the csv file in a string variable
         String line="";
         String csvSplitBy = ",";
         try (BufferedReader br = new BufferedReader(new FileReader(csvFile)))
@@ -22,15 +22,15 @@ public class PrintCSV {
             while ((line = br.readLine()) != null)
             {
                 List<String> values = Arrays.asList(line.split(csvSplitBy));
-                System.out.println(values);                     //Εκτύπωση των περιεχομένων του csv αρχείου
+                System.out.println(values);                     //Printing the contents of the csv file
                 if (values.size() == 2)
                 {
-                    people.add(new Person(values.get(0), values.get(1)));   //Εισαγωγή ονομάτων και φύλων στη λίστα
-                }                                                           //τύπου Object
+                    people.add(new Person(values.get(0), values.get(1)));   //Enter names and genders in the Object type list
+                }                                                          
                 else if (values.size() == 3)
                 {
-                    relation.add(new Relation(values.get(0), values.get(1), values.get(2)));   //Εισαγωγή ονομάτων και φύλων στη λίστα
-                }                                                                              // τύπου Object
+                    relation.add(new Relation(values.get(0), values.get(1), values.get(2)));   //Enter names and genders in the Object type list
+                }                                                                             
             }
             br.close();
         }
