@@ -1,6 +1,6 @@
 package house_of_baratheon;
 
-public class Relation {                     //Δημιουργία κλάσης Relation
+public class Relation {                     //Create a Relation class
     private String name1, relation, name2;
 
     public Relation(String name1, String relation, String name2) {
