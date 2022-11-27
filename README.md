@@ -7,7 +7,7 @@ Requirements covered by the application:
 4. Save the data in DOT format so that they can be visualized by GraphViz and visualize it.
 5. Create a text menu so that the user can select the above functions.
 
-![CodeExecution](https://user-images.githubusercontent.com/91207835/203865756-57f4f678-3157-44c4-b5bd-5fcd9ca402d9.png)
+![CodeExecution](https://user-images.githubusercontent.com/91207835/204134295-1b9495fa-2634-474b-a7c5-5a3472a0d581.png)
 
 ![VisualizedFamilyTree](https://user-images.githubusercontent.com/91207835/203865387-3aae73aa-de03-4859-b42a-fccad05fcdea.jpg)
 
