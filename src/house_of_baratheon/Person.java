@@ -1,7 +1,7 @@
 
 package house_of_baratheon;
 
-public class Person {                       //Δημιουργία κλάσης Person
+public class Person {                       //Create a Person class
     private String name, gender;
 
     public Person(String name, String gender) {
