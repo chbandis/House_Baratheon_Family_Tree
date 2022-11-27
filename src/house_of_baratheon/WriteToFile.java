@@ -6,7 +6,7 @@ import java.io.IOException;
 
 
 public class WriteToFile {
-    public static void write() throws Exception {               //Εξαγωγή αρχείου .dot
+    public static void write() throws Exception {               //Export the .dot file
         try {
             FileWriter myWriter = new FileWriter("got.dot");
             myWriter.write("digraph Got {\n" +
@@ -37,21 +37,21 @@ public class WriteToFile {
                     "}");
 
             myWriter.close();
-                                                                                 //Δημιουργία αρχείου jpg μέσω cmd
+                                                                                 //Create jpg file via cmd
             Process process = Runtime.getRuntime().exec("cmd /c dot -Tjpg ./got.dot -o ./got.jpg");
 
-            Thread.sleep(1500);         //Καθυστέριση την εκτέλεσης κατά 1,5 δευτερόλεπτα ώστε να λειτουργήσει ο
-                                            // παρακάτω έλεγχος
+            Thread.sleep(1500);         //Delay execution by 1.5 seconds for the following check to work
+                                            
             File f = new File("./got.jpg");
             if(f.exists() && !f.isDirectory()) {
-                System.out.println("Τα αρχεία got.dot και got.jpg εξήχθει επιτυχώς!");
+                System.out.println("The got.dot and got.jpg files were successfully extracted!");
             }else{
-                System.out.println("Σφάλμα το αρχείο δεν δημιουργήθηκε ");
+                System.out.println("Error file not created");
             }
 
 
         } catch (IOException | InterruptedException e) {
-            System.out.println("Σφάλμα.");
+            System.out.println("Error.");
             e.printStackTrace();
         }
     }
