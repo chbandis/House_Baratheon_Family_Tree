@@ -12,14 +12,14 @@ public class SortCSV {
 
     public static void SortByName()
     {
-        readcsv();       //Κλήση μεθόδου readcsv που είναι αναγκαία για τη ταξηνόμηση
-        Collections.sort(ReadCSV.people, Comparator.comparing(Person::getName)); //Ταξηνόμηση με βάση το όνομα - JAVA8
+        readcsv();       //Call readcsv method necessary for classification
+        Collections.sort(ReadCSV.people, Comparator.comparing(Person::getName)); //Sort by name - JAVA8
 
         try {
             FileWriter writer = new FileWriter("./SortedCSV_Names&Genders.txt");
             for(Person s : ReadCSV.people)
             {
-                writer.write(s.toString() + "\n");      //Εκτύπωση σε αρχείο txt
+                writer.write(s.toString() + "\n");      //Print to txt file
             }
 
             writer.close();
